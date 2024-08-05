@@ -1,0 +1,239 @@
+/* Estilos Gerais */
+body {
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6;
+    color: #4a4a4a;
+    background-color: #f9f9f9;
+    margin: 20px; /* Adicionando margem ao corpo */
+    padding: 0;
+}
+
+.container {
+    width: 80%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Cabeçalho */
+header {
+    background-color: #a8dadc;
+    color: #1d3557;
+    padding: 20px 0;
+}
+
+.header-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.profile-pic {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin-right: 20px;
+}
+
+.contact-info {
+    font-size: 0.9em;
+    color: #457b9d;
+}
+
+nav {
+    background-color: #457b9d;
+    padding: 10px 0;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    padding: 0;
+    margin: 0;
+    flex-wrap: wrap;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #f1faee;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #e63946;
+}
+
+/* Seções */
+main {
+    background-color: #fff;
+    padding: 20px;
+    margin-top: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+section {
+    margin-bottom: 30px;
+}
+
+h2 {
+    color: #1d3557;
+    margin-bottom: 10px;
+    border-bottom: 2px solid #e63946;
+    padding-bottom: 5px;
+}
+
+.intro {
+    font-style: italic;
+}
+
+.education-item,
+.certification-item,
+.experience-item {
+    border-bottom: 1px solid #ddd;
+    padding: 10px 0;
+    transition: background-color 0.3s, transform 0.3s; /* Adicionando transições */
+}
+
+.education-item:hover,
+.certification-item:hover,
+.experience-item:hover {
+    background-color: #f1faee;
+    transform: translateY(-5px); /* Adicionando efeito de hover */
+}
+
+.education-item:last-child,
+.certification-item:last-child,
+.experience-item:last-child {
+    border-bottom: none;
+}
+
+strong {
+    font-weight: bold;
+}
+
+.experience-item ul {
+    display: none;
+}
+
+.skills {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.skills li {
+    background-color: #f1faee;
+    padding: 8px 12px;
+    margin: 5px;
+    border-radius: 4px;
+    font-size: 0.9em;
+    transition: background-color 0.3s, transform 0.3s; /* Adicionando transições */
+}
+
+.skills li:hover {
+    background-color: #a8dadc;
+    transform: scale(1.05); /* Adicionando efeito de hover */
+}
+
+/* Responsabilidades na Experiência Profissional */
+.responsibilities {
+    list-style-type: disc; /* Marca os itens com um ponto */
+    margin: 10px 0; /* Margem superior e inferior para espaçamento */
+    padding-left: 20px; /* Espaçamento à esquerda para os itens da lista */
+}
+
+.responsibilities li {
+    margin-bottom: 5px; /* Espaçamento entre itens da lista */
+}
+
+
+.social-links {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.social-links li {
+    margin: 0 10px;
+}
+
+.social-links a {
+    color: #1d3557;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s, transform 0.3s; /* Adicionando transições */
+}
+
+.social-links a:hover {
+    color: #e63946;
+    transform: scale(1.1); /* Adicionando efeito de hover */
+}
+
+/* Rodapé */
+footer {
+    background-color: #457b9d;
+    color: #f1faee;
+    text-align: center;
+    padding: 10px 0;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    .header-content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul li {
+        margin-bottom: 10px;
+    }
+
+    .skills {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+/* Estilos para Impressão */
+@media print {
+    body {
+        font-family: 'Times New Roman', Times, serif;
+        color: #000;
+        background-color: #fff;
+    }
+
+    header {
+        background-color: #fff;
+        color: #000;
+    }
+
+    nav {
+        display: none;
+    }
+
+    main {
+        box-shadow: none;
+        margin-top: 0;
+    }
+
+    footer {
+        background-color: #fff;
+        color: #000;
+    }
+}

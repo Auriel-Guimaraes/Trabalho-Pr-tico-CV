@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>André Luis Rebouças Guimarães</title>
+    <link rel="stylesheet" href="style5.css">
+    <style>
+        /* Google Fonts */
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
+    </style>
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <img src="minha-foto.jpeg" alt="Minha Foto" class="profile-pic">
+            <div>
+                <h1>André Luis Rebouças Guimarães</h1>
+                <p class="contact-info">
+                    <a href="mailto:seuemail@exemplo.com">andre.guimaraes@pdbomdespacho.com.br</a> | Bom Despacho, Minas Gerais
+                </p>
+            </div>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#apresentacao">Apresentação</a></li>
+                <li><a href="#educacao">Educação</a></li>
+                <li><a href="#certificacoes">Certificações</a></li>
+                <li><a href="#experiencia">Experiência</a></li>
+                <li><a href="#habilidades">Habilidades Técnicas</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="apresentacao">
+            <h2>Apresentação</h2>
+            <p class="intro">Sou um profissional dedicado, paciente e detalhista. Possuo facilidade com trabalho em equipe e com gestão de pessoas. Formado em Admnistração, penso nos processos dentro de um contexto global, garantindo maior fluidez entre eles, maior conectividade e acertividade. Considero que fraquezas e ameaças são só degraus no caminho do sucesso. Além de tudo, gosto de desenvolver talentos, de forma a buscar uma melhora contínua e uma obtenção de resultados cada vez mais considerável.</p>
+        </section>
+
+        <section id="educacao">
+            <h2>Educação</h2>
+            <div class="education-item">
+                <h3>Universidade Federal de Ouro Preto</h3>
+                <p>Curso de Licenciatura em Matemática</p>
+                <p>Previsão de Conclusão: 2028</p>
+            </div>
+            <div class="education-item">
+                <h3>Centro Universitário Una de Bom Despacho</h3>
+                <p>Curso de Graduação em Administração</p>
+                <p>Ano de Conclusão: 2023</p>
+            </div>
+            <div class="education-item">
+                <h3>Escola Estadual Irmã Maria</h3>
+                <p>Ensino Médio Completo</p>
+                <p>Ano de Conclusão: 2012</p>
+            </div>
+        </section>
+
+        <section id="certificacoes">
+            <h2>Certificações</h2>
+            <div class="certification-item">
+                <strong>Contratações Diretas na Nova Lei de Licitações</strong>
+                <p>Carga Horária: 30 horas</p>
+                <p>Ano de Realização: 2024</p>
+            </div>
+            <div class="certification-item">
+                <strong>Curso de Licitações por Concorrência, Concurso, Leilão e Diálogo Competitivo</strong>
+                <p>Carga Horária: 20 horas</p>
+                <p>Ano de Realização: 2024</p>
+            </div>
+            <div class="certification-item">
+                <strong>Curso de Nova Lei de Licitações e Contratos: Aspectos Gerais e Pontos de Atenção</strong>
+                <p>Carga Horária: 40 horas</p>
+                <p>Ano de Realização: 2024</p>
+            </div>
+        </section>
+
+        <section id="experiencia">
+            <h2>Experiência</h2>
+            <div class="experience-item">
+                <h3>Atualmente - Técnico em Gestão Pública Municipal</h3>
+                <p>Município de Bom Despacho</p>
+                <p>Outubro 2015 - Presente</p>
+                <h2>Responsabilidades</h2>
+                    <p>Gestão de Projetos e Desenvolvimento Sustentável</p>
+                    <p>Gestão com Pessoas</p >
+                    <p>Análise de Dados, Cenários Atuais e Cenários Futuros</p>
+                    <p>Compilação de Dados e Relatórios</p>
+                    <p>Compras e Contratos e Prestação de Contas</p>
+                    <p>Nova Lei de Licitações e Contratos</p>
+            </div>
+        </section>
+
+        <section id="habilidades">
+            <h2>Habilidades Técnicas</h2>
+            <ul class="skills">
+                <li>HTML &amp; CSS</li>
+                <li>JavaScript</li>
+                <li>Git &amp; GitHub</li>
+                <li>Java</li> <!-- Incluindo Java como linguagem de destaque -->
+            </ul>
+        </section>
+
+        <section id="contato">
+            <h2>Contato</h2>
+            <p>Estou sempre aberto a novas oportunidades e colaborações. Você pode me encontrar nas seguintes plataformas:</p>
+            <ul class="social-links">
+                <li><a href="https://www.linkedin.com/in/andr%C3%A9-guimar%C3%A3es-7a745a233/" target="_blank">LinkedIn</a></li>
+                <li><a href="https://github.com/Auriel-Guimaraes" target="_blank">GitHub</a></li>
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 André Luis Rebouças Guimarães. Todos os direitos reservados.</p>
+    </footer>
+
+    <script>
+        // Elementos de interatividade com JavaScript
+
+        // Adicionando scroll suave para navegação
+        document.querySelectorAll('nav ul li a').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>
